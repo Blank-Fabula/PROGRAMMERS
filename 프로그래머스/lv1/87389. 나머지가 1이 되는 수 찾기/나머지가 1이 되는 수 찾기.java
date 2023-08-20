@@ -1,8 +1,6 @@
 class Solution {
     public int solution(int n) {
         int answer = 2;
-        for (; answer < n; answer++) {
-            if (n % answer == 1) { break; }
-        }
+        while (n % answer != 1) { answer++; }
     return answer; }
 }
